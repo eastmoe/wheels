@@ -1,18 +1,19 @@
 (venv) PS D:\ComfyUI\custom_nodes> pip install scikit-build-core cmake ninja nanobind
 (venv) PS D:\ComfyUI\custom_nodes> $env:CL = "/utf-8 /EHsc"
 (venv) PS D:\ComfyUI\custom_nodes> $env:PYTHONIOENCODING = "utf-8"
-(venv) PS D:\ComfyUI\custom_nodes> $env:SKBUILD_CMAKE_ARGS = @(
->>   "-DFETCHCONTENT_SOURCE_DIR_EIGEN=C:/Users/starmoon/Downloads/eigen-3.4.0/eigen-3.4.0",
->>   "-DFETCHCONTENT_SOURCE_DIR_LIBIGL=C:/Users/starmoon/Downloads/libigl-678e1fff76815e0c4c5d1f025ee2129181cc7d86/libigl-678e1fff76815e0c4c5d1f025ee2129181cc7d86",
->>   "-DFETCHCONTENT_SOURCE_DIR_NANOBIND=C:/Users/starmoon/Downloads/nanobind-2.7.0/nanobind-2.7.0",
->>   "-DFETCHCONTENT_SOURCE_DIR_EMBREE=C:/Users/starmoon/Downloads/embree-4.4.0/embree-4.4.0",
->>   "-DFETCHCONTENT_SOURCE_DIR_BOOST=C:/Users/starmoon/Downloads/boost_1_86_0.tar/boost_1_86_0",
->>   "-DCMAKE_PREFIX_PATH=D:/libs/robin-map-install",
->>   "-DFETCHCONTENT_SOURCE_DIR_TETGEN=C:/Users/starmoon/Downloads/tetgen-e05aca7df74e3f531bc35733ed87d36d437266c5/tetgen-e05aca7df74e3f531bc35733ed87d36d437266c5",
->>   "-DFETCHCONTENT_SOURCE_DIR_CGAL=C:/Users/starmoon/Downloads/CGAL-6.0.1-library.tar/CGAL-6.0.1-library/CGAL-6.0.1",
->>   "-DCMAKE_CXX_FLAGS=/utf-8 /EHsc",
->>   "-DCMAKE_C_FLAGS=/utf-8"
->> ) -join ";"
+(venv) PS D:\ComfyUI\custom_nodes>$env:SKBUILD_CMAKE_ARGS = @(
+  "-DFETCHCONTENT_SOURCE_DIR_EIGEN=C:/Users/xkw19/Downloads/eigen-3.4.0/eigen-3.4.0",
+  "-DFETCHCONTENT_SOURCE_DIR_LIBIGL=C:/Users/xkw19/Downloads/libigl-678e1fff76815e0c4c5d1f025ee2129181cc7d86/libigl-678e1fff76815e0c4c5d1f025ee2129181cc7d86",
+  "-DFETCHCONTENT_SOURCE_DIR_NANOBIND=C:/Users/xkw19/Downloads/nanobind-2.7.0/nanobind-2.7.0",
+  "-DFETCHCONTENT_SOURCE_DIR_EMBREE=C:/Users/xkw19/Downloads/embree-4.4.0/embree-4.4.0",
+  "-DFETCHCONTENT_SOURCE_DIR_BOOST=C:/Users/xkw19/Downloads/boost_1_86_0.tar/boost_1_86_0",
+  "-DCMAKE_PREFIX_PATH=D:/libs/robin-map-install",
+  "-DFETCHCONTENT_SOURCE_DIR_TETGEN=C:/Users/xkw19/Downloads/tetgen-e05aca7df74e3f531bc35733ed87d36d437266c5/tetgen-e05aca7df74e3f531bc35733ed87d36d437266c5",
+  "-DFETCHCONTENT_SOURCE_DIR_CGAL=C:/Users/xkw19/Downloads/CGAL-6.0.1-library.tar/CGAL-6.0.1-library/CGAL-6.0.1",
+  "-DFETCHCONTENT_SOURCE_DIR_TRIANGLE=C:/Users/xkw19/Downloads/triangle-master/triangle-master",
+  "-DCMAKE_C_FLAGS=/utf-8",
+  "-DCMAKE_CXX_FLAGS=/utf-8"
+) -join ";"
 (venv) PS D:\ComfyUI\custom_nodes> pip wheel libigl --no-build-isolation --no-cache-dir -w .
 Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
 Collecting libigl
