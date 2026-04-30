@@ -1,3 +1,4 @@
+(venv) PS D:\ComfyUI\custom_nodes> pip install scikit-build-core cmake ninja nanobind
 (venv) PS D:\ComfyUI\custom_nodes> $env:CL = "/utf-8 /EHsc"
 (venv) PS D:\ComfyUI\custom_nodes> $env:PYTHONIOENCODING = "utf-8"
 (venv) PS D:\ComfyUI\custom_nodes> $env:SKBUILD_CMAKE_ARGS = @(
